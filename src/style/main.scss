@@ -1,0 +1,38 @@
+.footer {
+  position: fixed; // define o posicionamento fixo
+  bottom: 0; // posiciona o footer no final da página
+  left: 0; // alinha o footer à esquerda
+  width: 100%; // largura total
+  background-color: #333; // cor de fundo escura
+  color: #fff; // cor do texto branca
+  text-align: center; // centraliza o conteúdo do footer
+  padding: 20px; // espaço interno ao redor do conteúdo
+}
+
+nav {
+  background-color: #333; // cor de fundo escura
+  padding: 10px 0; // padding para espaçamento interno
+
+  ul {
+    list-style-type: none; // remove os estilos padrão da lista
+    margin: 0; // remove a margem padrão
+    padding: 0; // remove o padding padrão
+    text-align: center; // centraliza os itens da lista
+
+    li {
+      display: inline-block; // exibe os itens da lista em linha
+      margin-right: 20px; // espaçamento entre os itens da lista
+
+      a {
+        text-decoration: none; // remove a decoração do link
+        color: #fff; // cor do texto branca
+        font-size: 16px; // tamanho da fonte
+        font-weight: bold; // peso da fonte
+
+        &:hover {
+          text-decoration: underline; // sublinha o link ao passar o mouse
+        }
+      }
+    }
+  }
+}
