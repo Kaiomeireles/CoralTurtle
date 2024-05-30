@@ -5,6 +5,7 @@ function Navbar() {
   return (
     <nav>
       <ul>
+        <li><a href="/Home">Home</a></li>
         <li><a href="/">Dashboard</a></li>
         <li><a href="/mapas-interativos">Mapas Interativos</a></li>
         <li><a href="/alertas">Alertas</a></li>
