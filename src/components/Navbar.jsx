@@ -3,8 +3,13 @@ import '../style/main.scss'; // Importa o arquivo main.scss para estilização
 
 function Navbar() {
   return (
-    <nav>
-      <ul>
+    <nav className="navbar">
+      <div className="logo">
+        <a href="/">
+          <img src="/path-to-your-logo/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <ul className="nav-links">
         <li><a href="/Home">Home</a></li>
         <li><a href="/">Dashboard</a></li>
         <li><a href="/mapas-interativos">Mapas Interativos</a></li>

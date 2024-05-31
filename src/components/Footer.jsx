@@ -3,7 +3,7 @@ import '../style/main.scss';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-white text-center py-3">
+    <footer >
       <p>© 2024 CoralTurtle. Todos Direitos Reservados.</p>
     </footer>
   );

@@ -1,47 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #010b2b;
+  margin: 0;
+  padding: 0;
+}
+
 footer {
-  position: fixed; // define o posicionamento fixo
-  bottom: 0; // posiciona o footer no final da página
-  left: 0; // alinha o footer à esquerda
-  width: 100%; // largura total
-  background: linear-gradient(to right, blue, pink); // cor de fundo escura
-  color: #fff; // cor do texto branca
-  text-align: center; // centraliza o conteúdo do footer
-  padding: 20px; // espaço interno ao redor do conteúdo
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(17, 17, 17); // Certifique-se de usar background-color em vez de apenas background para uma cor sólida
+  color: #ffffff; // Mudando a cor do texto para um tom mais escuro para visibilidade
+  text-align: center;
+  padding: 20px;
+ // Garantindo que o footer esteja no topo dos outros elementos
 }
 
 nav {
-  background: linear-gradient(to right, blue, pink); // cor de fundo escura
-  padding: 10px 0; // padding para espaçamento interno
+  background: rgb(44, 44, 44);
+  padding: 10px 0;
 
   ul {
-    list-style-type: none; // remove os estilos padrão da lista
-    margin: 0; // remove a margem padrão
-    padding: 0; // remove o padding padrão
-    text-align: center; // centraliza os itens da lista
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 
     li {
-      display: inline-block; // exibe os itens da lista em linha
-      margin-right: 20px; // espaçamento entre os itens da lista
+      display: inline-block;
+      margin-right: 20px;
 
       a {
-        text-decoration: none; // remove a decoração do link
-        color: #fff; // cor do texto branca
-        font-size: 16px; // tamanho da fonte
-        font-weight: bold; // peso da fonte
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
 
         &:hover {
-          text-decoration: underline; // sublinha o link ao passar o mouse
+          text-decoration: underline;
         }
       }
     }
   }
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  margin: 0;
-  padding: 0;
 }
 
 .dashboard-container {
@@ -52,8 +54,9 @@ body {
 
 h1 {
   text-align: center;
-  color: #333;
+  color: #ffffff;
 }
+
 
 .dashboard-card {
   background-color: #fff;
@@ -84,11 +87,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 .carousel {
-  width: 1000%;
+  width: 100%;
   max-width: 800px;
+  height: 400px;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 10px;
@@ -99,7 +105,52 @@ h1 {
   width: 100%;
   height: auto;
   display: flex;
-  margin: 0 auto; /* Centraliza horizontalmente */
+  margin: 0 auto; // Centraliza horizontalmente
+}
+.quem {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color:#010b2b; // Ajuste conforme necessário
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+.text-container {
+  flex: 2;
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+
+  p {
+    font-family: 'Arial', sans-serif;
+    color: #fff8f8;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      margin: 5px 0;
+    }
+  }
 }
 
 .content {
@@ -107,5 +158,3 @@ h1 {
   max-width: 800px;
   text-align: center;
 }
-
-

@@ -7,10 +7,7 @@ const HomePage = () => {
     return (
         <div className="homepage">
             <div className="content">
-                <h1>Bem-vindo à CoralTurtle</h1>
-                <p>A CoralTurtle é uma empresa dedicada à preservação dos oceanos e à luta contra a poluição marinha.</p>
-                <p>Nossos corais artificiais equipados com sensores avançados monitoram a temperatura do mar e detectam sinais de poluição, contribuindo para a proteção dos ecossistemas marinhos.</p>
-                <h2>Produto</h2>
+                <h1>PRODUTO</h1>
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -41,15 +38,23 @@ const HomePage = () => {
                         />
                     </Carousel.Item>
                 </Carousel>
-                <h2>Quem Somos</h2>
-                <p>Somos uma equipe apaixonada por oceanos, comprometida em desenvolver soluções inovadoras para os desafios</p>
-                <h2>Nossos Parceiros</h2>
-                <p>Agradecemos aos nossos parceiros por seu apoio contínuo na nossa missão de preservar os oceanos:</p>
-                <ul>
-                    <li>Organização Mundial da Preservação Marinha</li>
-                    <li>Fundação para a Conservação dos Recifes de Coral</li>
-                    <li>Associação Internacional de Limpeza Costeira</li>
-                </ul>
+                <div className="quem">
+                    <div className="image-container">
+                        <img src="Coralturtle.png" alt="Ocean Image" />
+                    </div>
+                    <div className="text-container">
+                        <h2>QUEM SOMOS</h2>
+                        <p>Somos uma equipe apaixonada por oceanos, comprometida em desenvolver soluções inovadoras para os desafios.</p>
+                        
+                        <p>Agradecemos aos nossos parceiros por seu apoio contínuo na nossa missão de preservar os oceanos:</p>
+                        <ul>
+                            <li>Organização Mundial da Preservação Marinha</li>
+                            <li>Fundação para a Conservação dos Recifes de Coral</li>
+                            <li>Associação Internacional de Limpeza Costeira</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     );

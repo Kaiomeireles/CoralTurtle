@@ -14,7 +14,7 @@ const App = () => {
     <Router>
       <div>
         <Nav />
-        
+
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/mapas" element={<MapasInterativosPage />} />
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/" element={<DashboardPage />} />
         </Routes>
 
-      
+
         <Footer />
       </div>
     </Router>
