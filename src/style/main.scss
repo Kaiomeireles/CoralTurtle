@@ -11,30 +11,36 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(17, 17, 17); // Certifique-se de usar background-color em vez de apenas background para uma cor sólida
-  color: #ffffff; // Mudando a cor do texto para um tom mais escuro para visibilidade
+  background-color: rgb(255, 255, 255); // Certifique-se de usar background-color em vez de apenas background para uma cor sólida
+  color: #002008; // Mudando a cor do texto para um tom mais escuro para visibilidade
   text-align: center;
   padding: 20px;
  // Garantindo que o footer esteja no topo dos outros elementos
 }
 
 nav {
-  background: rgb(44, 44, 44);
+  background: rgb(255, 255, 255);
   padding: 10px 0;
 
   ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto; /* Centraliza o ul dentro do nav */
     padding: 0;
+    display: flex; /* Usa flexbox para o alinhamento */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
     text-align: center;
 
     li {
-      display: inline-block;
-      margin-right: 20px;
+      margin-right: 20px; /* Ajusta o espaço entre os itens */
+
+      &:last-child {
+        margin-right: 0; /* Remove a margem direita do último item */
+      }
 
       a {
         text-decoration: none;
-        color: #fff;
+        color: #002008;
         font-size: 16px;
         font-weight: bold;
 
@@ -45,6 +51,40 @@ nav {
     }
   }
 }
+.parceiros {
+  display: flex; /* Usa flexbox para o alinhamento */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  padding: 20px; /* Adiciona um pouco de padding ao redor da div */
+  background-color: #010b2b; /* Define uma cor de fundo para a seção */
+  
+  .texto {
+    flex: 1; /* Faz com que o texto ocupe a maior parte do espaço disponível */
+    margin-right: 20px; /* Adiciona um espaço entre o texto e a imagem */
+    color: #fff;
+    
+    h2 {
+      font-size: 24px; /* Define o tamanho da fonte para o título */
+      margin-bottom: 10px; /* Adiciona um espaço abaixo do título */
+    }
+    
+    p {
+      font-size: 16px; /* Define o tamanho da fonte para o parágrafo */
+      color: #ffffff; /* Define uma cor para o texto */
+    }
+  }
+  
+  .imagem {
+    flex-shrink: 0; /* Impede que a imagem encolha */
+    
+    img {
+      max-width: 200px; /* Define a largura máxima da imagem */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 10px; /* Adiciona cantos arredondados à imagem */
+    }
+  }
+}
+
 
 .dashboard-container {
   max-width: 900px;
@@ -157,4 +197,69 @@ h1 {
   width: 80%;
   max-width: 800px;
   text-align: center;
+}
+.cardcarousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .card {
+    min-width: 100px;
+    margin: 10px;
+    padding: 20px;
+    background: #010b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+
+    img {
+      max-width: 40%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
 }

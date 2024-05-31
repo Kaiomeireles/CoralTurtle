@@ -2,12 +2,13 @@ import React from 'react';
 import '../style/main.scss'; // Importa o arquivo main.scss para estilização
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importa o CSS do Bootstrap
 import { Carousel } from 'react-bootstrap'; // Importa o componente Carousel do Bootstrap
+import CardCarousel from '../components/CardCarousel';
 
 const HomePage = () => {
     return (
         <div className="homepage">
             <div className="content">
-                <h1>PRODUTO</h1>
+            
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -45,7 +46,6 @@ const HomePage = () => {
                     <div className="text-container">
                         <h2>QUEM SOMOS</h2>
                         <p>Somos uma equipe apaixonada por oceanos, comprometida em desenvolver soluções inovadoras para os desafios.</p>
-                        
                         <p>Agradecemos aos nossos parceiros por seu apoio contínuo na nossa missão de preservar os oceanos:</p>
                         <ul>
                             <li>Organização Mundial da Preservação Marinha</li>
@@ -54,7 +54,17 @@ const HomePage = () => {
                         </ul>
                     </div>
                 </div>
-
+                <h1>PRODUTO</h1>
+                <CardCarousel />
+                <div className='parceiros'>
+                    <div className='texto'>
+                        <h2>Nossos Parceiros</h2>
+                        <p>Trabalhamos com diversas empresas renomadas para trazer os melhores serviços para você.</p>
+                    </div>
+                    <div className='imagem'>
+                        <img src='Captura_de_tela_2024-05-28_183339.png' alt='Parceiros' />
+                    </div>
+                </div>
             </div>
         </div>
     );
