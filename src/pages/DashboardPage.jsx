@@ -11,45 +11,35 @@ const DashboardPage = () => {
       <DashboardCard
         image={dashboard1}
         title=""
-        description="A poluição marinha, especialmente com plásticos, vidros e outros detritos, representa uma ameaça significativa para os ecossistemas submarinos. A tecnologia de sensores ultrassônicos oferece uma solução inovadora para detectar e monitorar esses detritos, ajudando na preservação e manutenção dos corais, tanto naturais quanto artificiais. No projeto CoralTurtle, a integração de sensores de temperatura e ultrassônicos desempenha um papel crucial na monitoração e proteção dos corais submersos.
-
-        Funcionamento dos Sensores Ultrassônicos
+        description="Detecção de Detritos com Sensor Ultrassônico
+        No projeto CoralTurtle, o sensor ultrassônico HC-SR04 é utilizado para detectar a presença de detritos no mar, como plásticos e vidros. Este sensor opera emitindo pulsos sonoros de alta frequência que se propagam pela água e refletem ao encontrar objetos sólidos. O tempo que esses ecos levam para retornar ao sensor é medido e convertido em uma distância, permitindo a identificação e localização dos detritos.
         
-        Sensores ultrassônicos funcionam emitindo ondas sonoras de alta frequência que se propagam pela água e refletem ao encontrar um objeto. O tempo que essas ondas levam para retornar ao sensor é medido e convertido em uma distância. No contexto de detecção de detritos, esses sensores podem identificar a presença de objetos sólidos como plásticos, vidros e outros materiais não biodegradáveis que flutuam ou se depositam no fundo marinho.
+        Funcionamento do Sensor Ultrassônico:
         
-        Implementação no CoralTurtle
-        
-        No projeto CoralTurtle, sensores ultrassônicos são estrategicamente posicionados ao redor e dentro das estruturas de corais artificiais. Esses sensores monitoram continuamente o ambiente submarino, identificando detritos que possam se acumular ou passar pelas áreas críticas dos corais. A detecção precisa é possível através das seguintes etapas:
-        
-        1. Emissão de Pulsos Ultrassônicos: Os sensores enviam pulsos sonoros em intervalos regulares.
-        2. Recepção dos Ecos: Os pulsos que encontram obstáculos refletem de volta ao sensor.
-        3. Cálculo de Distância: O sensor calcula a distância com base no tempo de retorno das ondas sonoras.
-        4. Identificação de Detritos: Com algoritmos de processamento de sinal, é possível diferenciar entre diferentes tipos de detritos, como plásticos e vidros, com base em suas propriedades reflexivas.
-        
-        Benefícios para a Humanidade
-        
-        1. Proteção dos Ecossistemas Marinhos: A detecção e remoção de detritos marinhos ajudam a proteger a biodiversidade. Corais artificiais, como os desenvolvidos pela CoralTurtle, servem de habitat para muitas espécies marinhas. Manter esses habitats livres de detritos é essencial para a saúde das populações de peixes e outras formas de vida marinha.
-        
-        2. Monitoramento Contínuo: A tecnologia de sensores ultrassônicos permite um monitoramento contínuo e em tempo real do ambiente submarino. Isso é crucial para a detecção precoce de problemas ambientais e a implementação rápida de medidas corretivas.
-        
-        3. Dados para Pesquisa Científica: Os dados coletados pelos sensores ultrassônicos são valiosos para a pesquisa científica. Eles fornecem informações sobre padrões de poluição e a movimentação de detritos no mar, ajudando os cientistas a entender melhor o impacto da poluição marinha e desenvolver estratégias mais eficazes de mitigação.
-        
-        4. Conscientização e Educação: Através de projetos como o CoralTurtle, é possível aumentar a conscientização sobre a poluição marinha. Ao demonstrar o impacto dos detritos no ecossistema de corais artificiais, o projeto pode educar o público e promover comportamentos mais responsáveis em relação ao descarte de lixo.
-        
-        5. Sustentabilidade e Preservação Ambiental: Ao proteger os corais e monitorar a qualidade da água, o projeto CoralTurtle contribui para a sustentabilidade dos oceanos. Corais saudáveis desempenham um papel vital na absorção de dióxido de carbono e na proteção das costas contra a erosão.
-        
-        6. Inovação Tecnológica: O uso de sensores ultrassônicos para a detecção de detritos marinhos representa uma inovação tecnológica significativa. Este avanço pode ser aplicado em outras áreas de preservação ambiental e monitoramento, beneficiando uma ampla gama de iniciativas de conservação marinha.
-        
-        Futuro do CoralTurtle
-        
-        O projeto CoralTurtle, com a integração de sensores ultrassônicos, não só protege os corais artificiais, mas também estabelece um modelo para a conservação marinha inteligente. À medida que a tecnologia avança, os sensores se tornarão ainda mais precisos e capazes de diferenciar entre tipos de detritos com maior eficácia. Além disso, a expansão do uso dessa tecnologia para outras áreas do oceano pode amplificar os benefícios, contribuindo para a saúde geral dos ecossistemas marinhos em todo o mundo.
-        
-        A combinação de monitoramento de temperatura e detecção de detritos coloca o CoralTurtle na vanguarda da conservação marinha, demonstrando como a tecnologia pode ser utilizada para enfrentar os desafios ambientais contemporâneos e proteger os recursos naturais para as futuras gerações."
+        Emissão de Pulsos: Pulsos sonoros são enviados pelo sensor em intervalos regulares.
+        Recepção de Ecos: Os pulsos refletem ao encontrar detritos e retornam ao sensor.
+        Cálculo de Distância: O tempo de retorno é usado para calcular a proximidade dos detritos.
+        Identificação de Detritos: Algoritmos processam os sinais para distinguir entre diferentes tipos de detritos, como plásticos e vidros.
+        Os dados coletados pelo sensor ultrassônico são exibidos em um LCD e enviados via MQTT para análise em tempo real, permitindo o monitoramento contínuo e eficaz da poluição marinha."
       />
       <DashboardCard
         image={dashboard2}
-        title="Temperatura"
-        description="Aqui podemos ver o desempenho das vendas segmentadas por região. Isso nos ajuda a identificar quais áreas estão gerando mais receita e quais precisam de atenção."
+        title=""
+        description="Monitoramento de Temperatura com Sensor DS18B20
+        O sensor de temperatura DS18B20 é utilizado no projeto CoralTurtle para medir a temperatura da água do mar, um parâmetro crucial que pode ser afetado por contaminantes como óleo. Este sensor é conhecido por sua precisão e facilidade de integração com microcontroladores como o ESP32.
+        
+        Funcionamento do Sensor DS18B20:
+        
+        Medição da Temperatura: O sensor DS18B20 mede a temperatura da água com alta precisão.
+        Calibração e Leitura: O sensor calibra automaticamente as leituras e envia os dados para o microcontrolador.
+        Transmissão dos Dados: Os dados de temperatura são exibidos em um LCD e enviados via MQTT para análise em tempo real.
+        A monitorização da temperatura da água permite detectar variações anômalas que podem indicar a presença de contaminantes, ajudando a preservar a qualidade da água e proteger os ecossistemas marinhos. O uso combinado de sensores ultrassônicos e de temperatura no CoralTurtle proporciona uma solução abrangente para o monitoramento da poluição marinha.
+        
+        
+        
+        
+        
+        "
       />
     </div>
   );

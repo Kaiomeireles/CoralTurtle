@@ -45,13 +45,7 @@ const HomePage = () => {
                     </div>
                     <div className="text-container">
                         <h2>QUEM SOMOS</h2>
-                        <p>Somos uma equipe apaixonada por oceanos, comprometida em desenvolver soluções inovadoras para os desafios.</p>
-                        <p>Agradecemos aos nossos parceiros por seu apoio contínuo na nossa missão de preservar os oceanos:</p>
-                        <ul>
-                            <li>Organização Mundial da Preservação Marinha</li>
-                            <li>Fundação para a Conservação dos Recifes de Coral</li>
-                            <li>Associação Internacional de Limpeza Costeira</li>
-                        </ul>
+                        <p>Somos a CoralTurtle, uma empresa dedicada à preservação dos oceanos e à proteção da vida marinha. Nossa missão é utilizar tecnologia de ponta para monitorar e combater a poluição marinha, criando soluções inovadoras que ajudam a manter os oceanos limpos e saudáveis para as gerações futuras. Fundada por um grupo de apaixonados pelo meio ambiente e pela tecnologia, a CoralTurtle combina expertise em ciência marinha e engenharia para desenvolver produtos que fazem a diferença.</p>
                     </div>
                 </div>
                 <h1>PRODUTO</h1>

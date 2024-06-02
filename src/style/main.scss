@@ -90,6 +90,7 @@ nav {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
+  color: #ffffff;
 }
 
 h1 {
@@ -97,13 +98,14 @@ h1 {
   color: #ffffff;
 }
 
-
 .dashboard-card {
-  background-color: #fff;
+  background-color: #010b2b;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   padding: 20px;
+  display: flex;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 
@@ -112,16 +114,17 @@ h1 {
 }
 
 .dashboard-image {
-  width: 100%;
+  width: 30%;
   height: auto;
   border-radius: 4px;
+  margin-right: 20px;
 }
 
 .dashboard-description {
-  margin-top: 10px;
   font-size: 16px;
-  color: #666;
+  color: #ffffff;
 }
+
 
 .homepage {
   display: flex;

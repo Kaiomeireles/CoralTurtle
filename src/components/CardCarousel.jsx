@@ -5,10 +5,10 @@ const CardCarousel = () => {
    
     const [index, setIndex] = useState(0);
     const cards = [
-        { id: 1, title: 'Produto 1', description: 'Descrição do produto 1.', image: 'Coralturtle.png' },
-        { id: 2, title: 'Produto 2', description: 'Descrição do produto 2.', image: 'Coralturtle.png' },
-        { id: 3, title: 'Produto 3', description: 'Descrição do produto 3.', image: 'Coralturtle.png' },
-        { id: 4, title: 'Produto 4', description: 'Descrição do produto 4.', image: 'Coralturtle.png' },
+        { id: 1, title: 'CoralGuard Alpha', description: 'O CoralGuard Alpha ', image: 'Coralturtle.png' },
+        { id: 2, title: 'CoralGuard Beta', description: 'O CoralGuard Beta', image: 'Coralturtle.png' },
+        { id: 3, title: 'CoralGuard Gamma', description: 'O CoralGuard Gamma .', image: 'Coralturtle.png' },
+        { id: 4, title: 'CoralGuard Delta', description: 'O CoralGuard Delta ', image: 'Coralturtle.png' },
         // Adicione mais produtos conforme necessário
     ];
 
