@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Projeto CoralTurtle: Vigilantes da Vida Submarina
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Identificação do Problema
+A poluição dos oceanos é uma das maiores ameaças ao meio ambiente. Plásticos, vidros e outros detritos, além de substâncias como óleo, podem afetar significativamente a vida marinha e a qualidade da água. Monitorar essas condições é essencial para a preservação dos ecossistemas marinhos.
 
-## Available Scripts
+### Solução Proposta
+A solução proposta pelo projeto CoralTurtle envolve o uso de uma plataforma ESP32 equipada com sensores para monitorar a qualidade da água do mar. O projeto foca em dois parâmetros principais:
 
-In the project directory, you can run:
+1. **Detecção de detritos (plásticos, vidros, etc.)** usando um sensor ultrassônico.
+2. **Medição da temperatura da água**, que pode ser afetada por contaminantes como óleo, usando um sensor DS18B20.
 
-### `npm start`
+Os dados coletados são exibidos em um LCD e enviados via MQTT para análise em tempo real. Todo o sistema é colocado dentro de um coral fictício submerso, que coleta dados continuamente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Implementação da Solução
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Componentes Utilizados
 
-### `npm test`
+- **ESP32**: Microcontrolador principal com suporte a WiFi.
+- **Sensor de Temperatura DS18B20**: Para medir a temperatura da água.
+- **Sensor Ultrassônico HC-SR04**: Para detectar a presença de detritos no mar.
+- **LCD 16x2**: Para exibir os dados coletados.
+- **WiFi**: Para transmitir os dados via MQTT.
+- **Broker MQTT**: Para receber e armazenar os dados coletados.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Configuração do Sistema
 
-### `npm run build`
+1. **Configuração da Rede WiFi e MQTT**:
+    - Conectar o ESP32 à rede WiFi.
+    - Configurar a conexão com o broker MQTT para transmitir os dados.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Configuração do LCD**:
+    - Inicializar o LCD 16x2 para exibir a temperatura da água e a distância dos detritos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Configuração dos Sensores**:
+    - **DS18B20**: Configurado para medir a temperatura da água.
+    - **HC-SR04**: Configurado para detectar a distância dos detritos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Código Fonte
+Contém o código-fonte do projeto. [aqui](https://github.com/Kaiomeireles/Kaiomeireles/blob/main/sketch.ino)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Resultados Esperados e Impacto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Resultados Esperados**:
+- Medição precisa da temperatura da água, ajudando a identificar possíveis contaminações.
+- Detecção eficaz de detritos na água, auxiliando no monitoramento da poluição.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Impacto**:
+- Contribuição significativa para a preservação dos ecossistemas marinhos.
+- Fornecimento de dados importantes para organizações ambientais e governamentais.
+- Sensibilização sobre a importância da conservação dos oceanos.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Edge Computing
 
-## Learn More
+A utilização do ESP32 com sensores integrados exemplifica a aplicação de Edge Computing, onde a coleta e processamento de dados ocorrem diretamente no dispositivo, permitindo uma resposta mais rápida e eficiente.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Repositório GIT
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Estrutura do Repositório
 
-### Code Splitting
+1. **README**: Este documento, detalhando o projeto, instruções de uso, requisitos e dependências.
+2. **Código Fonte C++**: O código detalhado acima.
+3. **Simulação Wokwi**: Link para o modelo criado no simulador.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Link para Simulação Wokwi
+[Simulação Wokwi do Projeto CoralTurtle](https://wokwi.com/projects/399334869149912065)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Video Explicativo
 
-### Making a Progressive Web App
+- Para entender melhor como funciona clicando [aqui]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Licença
+Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contribuidores
+- Kaio Vinicius Meireles Alves RM553282
+- Lucas Alves de Souza RM553956
+- Lucas de Freitas Pagung RM553242
