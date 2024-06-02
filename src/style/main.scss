@@ -137,7 +137,7 @@ h1 {
 .carousel {
   width: 100%;
   max-width: 800px;
-  height: 400px;
+  height: 600px;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 10px;
@@ -197,7 +197,7 @@ h1 {
 }
 
 .content {
-  width: 80%;
+  width: 100%;
   max-width: 800px;
   text-align: center;
 }
@@ -216,17 +216,20 @@ h1 {
   }
 
   .card {
-    min-width: 100px;
-    margin: 10px;
-    padding: 20px;
+    min-width: 00px;
+    margin: 0px;
+    padding: 0px;
     background: #010b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex-shrink: 0; /* Prevents shrinking */
 
     img {
-      max-width: 40%;
+      max-width: 30%;
       border-radius: 10px;
       margin-bottom: 10px;
     }

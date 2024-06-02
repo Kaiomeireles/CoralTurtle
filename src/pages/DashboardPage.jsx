@@ -1,8 +1,8 @@
 import React from 'react';
 import '../style/main.scss';
 import DashboardCard from '../components/DashboardCard';
-import dashboard1 from '../images/dist.png';
-import dashboard2 from '../images/temp.png';
+import dashboard1 from '../images/Captura de tela 2024-06-02 184849.png';
+import dashboard2 from '../images/Captura de tela 2024-06-02 184838.png';
 
 const DashboardPage = () => {
   return (
