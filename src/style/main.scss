@@ -15,7 +15,7 @@ footer {
   color: #002008; // Mudando a cor do texto para um tom mais escuro para visibilidade
   text-align: center;
   padding: 20px;
- // Garantindo que o footer esteja no topo dos outros elementos
+  // Garantindo que o footer esteja no topo dos outros elementos
 }
 
 nav {
@@ -24,18 +24,24 @@ nav {
 
   ul {
     list-style-type: none;
-    margin: 0 auto; /* Centraliza o ul dentro do nav */
+    margin: 0 auto;
+    /* Centraliza o ul dentro do nav */
     padding: 0;
-    display: flex; /* Usa flexbox para o alinhamento */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    align-items: center; /* Centraliza os itens verticalmente */
+    display: flex;
+    /* Usa flexbox para o alinhamento */
+    justify-content: center;
+    /* Centraliza os itens horizontalmente */
+    align-items: center;
+    /* Centraliza os itens verticalmente */
     text-align: center;
 
     li {
-      margin-right: 20px; /* Ajusta o espaço entre os itens */
+      margin-right: 20px;
+      /* Ajusta o espaço entre os itens */
 
       &:last-child {
-        margin-right: 0; /* Remove a margem direita do último item */
+        margin-right: 0;
+        /* Remove a margem direita do último item */
       }
 
       a {
@@ -51,36 +57,52 @@ nav {
     }
   }
 }
+
 .parceiros {
-  display: flex; /* Usa flexbox para o alinhamento */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  justify-content: space-between; /* Espaça os itens igualmente */
-  padding: 20px; /* Adiciona um pouco de padding ao redor da div */
-  background-color: #010b2b; /* Define uma cor de fundo para a seção */
-  
+  display: flex;
+  /* Usa flexbox para o alinhamento */
+  align-items: center;
+  /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between;
+  /* Espaça os itens igualmente */
+  padding: 20px;
+  /* Adiciona um pouco de padding ao redor da div */
+  background-color: #010b2b;
+  /* Define uma cor de fundo para a seção */
+
   .texto {
-    flex: 1; /* Faz com que o texto ocupe a maior parte do espaço disponível */
-    margin-right: 20px; /* Adiciona um espaço entre o texto e a imagem */
+    flex: 1;
+    /* Faz com que o texto ocupe a maior parte do espaço disponível */
+    margin-right: 20px;
+    /* Adiciona um espaço entre o texto e a imagem */
     color: #fff;
-    
+
     h2 {
-      font-size: 24px; /* Define o tamanho da fonte para o título */
-      margin-bottom: 10px; /* Adiciona um espaço abaixo do título */
+      font-size: 24px;
+      /* Define o tamanho da fonte para o título */
+      margin-bottom: 10px;
+      /* Adiciona um espaço abaixo do título */
     }
-    
+
     p {
-      font-size: 16px; /* Define o tamanho da fonte para o parágrafo */
-      color: #ffffff; /* Define uma cor para o texto */
+      font-size: 16px;
+      /* Define o tamanho da fonte para o parágrafo */
+      color: #ffffff;
+      /* Define uma cor para o texto */
     }
   }
-  
+
   .imagem {
-    flex-shrink: 0; /* Impede que a imagem encolha */
-    
+    flex-shrink: 0;
+    /* Impede que a imagem encolha */
+
     img {
-      max-width: 200px; /* Define a largura máxima da imagem */
-      height: auto; /* Mantém a proporção da imagem */
-      border-radius: 10px; /* Adiciona cantos arredondados à imagem */
+      max-width: 200px;
+      /* Define a largura máxima da imagem */
+      height: auto;
+      /* Mantém a proporção da imagem */
+      border-radius: 10px;
+      /* Adiciona cantos arredondados à imagem */
     }
   }
 }
@@ -150,11 +172,12 @@ h1 {
   display: flex;
   margin: 0 auto; // Centraliza horizontalmente
 }
+
 .quem {
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color:#010b2b; // Ajuste conforme necessário
+  background-color: #010b2b; // Ajuste conforme necessário
 }
 
 .image-container {
@@ -201,6 +224,7 @@ h1 {
   max-width: 800px;
   text-align: center;
 }
+
 .cardcarousel {
   display: flex;
   align-items: center;
@@ -226,7 +250,8 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0;
+    /* Prevents shrinking */
 
     img {
       max-width: 30%;
@@ -245,7 +270,8 @@ h1 {
     }
   }
 
-  .prev, .next {
+  .prev,
+  .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -268,4 +294,165 @@ h1 {
   .next {
     right: 10px;
   }
+}
+
+.coral-guard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px;
+  background-color: #01071c;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  /* Adicionando margem para espaçamento da borda da página */
+}
+
+.coral-guard header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* Reduzindo um pouco o espaço entre o cabeçalho e o conteúdo */
+}
+
+.coral-guard header h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  /* Aumentando o tamanho do título */
+  color: #ffffff;
+  /* Mudando a cor do título para torná-lo mais legível */
+}
+
+.coral-guard header p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  /* Ajustando a cor do texto do cabeçalho */
+}
+
+.gallery,
+.stories,
+.video,
+.feedback {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  
+}
+
+.image-grid img {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.stories ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stories li {
+  background: #010b2b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+
+}
+
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedback button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  align-self: center;
+}
+
+.feedback button:hover {
+  background-color: #0056b3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage';
 import MapasInterativosPage from './pages/MapasInterativosPage';
 import AlertasPage from './pages/AlertasPage';
-import HistoriasInterativasPage from './pages/HistoriasInterativasPage';
+import CoralGuard from './pages/CoralGuard';
 import Footer from './components/Footer';
 import Nav from './components/Navbar';
 import HomePage from './pages/HomePage';
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/home" element={<HomePage />} />
           <Route path="/mapas" element={<MapasInterativosPage />} />
           <Route path="/alertas" element={<AlertasPage />} />
-          <Route path="/historias" element={<HistoriasInterativasPage />} />
+          <Route path="/coralguard" element={<CoralGuard />} />
           <Route path="/" element={<DashboardPage />} />
         </Routes>
         <Footer />
