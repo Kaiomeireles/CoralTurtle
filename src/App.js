@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DashboardPage from './pages/DashboardPage';
-import MapasInterativosPage from './pages/MapasInterativosPage';
+import Graficos from './pages/Graficos';
 import AlertasPage from './pages/AlertasPage';
 import CoralGuard from './pages/CoralGuard';
 import Footer from './components/Footer';
@@ -15,7 +15,7 @@ const App = () => {
         <Nav />
         <Routes>
           <Route path="/home" element={<HomePage />} />
-          <Route path="/mapas" element={<MapasInterativosPage />} />
+          <Route path="/graficos" element={<Graficos />} />
           <Route path="/alertas" element={<AlertasPage />} />
           <Route path="/coralguard" element={<CoralGuard />} />
           <Route path="/" element={<DashboardPage />} />
