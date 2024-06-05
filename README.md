@@ -69,7 +69,7 @@ A utilização do ESP32 com sensores integrados exemplifica a aplicação de Edg
 
 ## Video Explicativo
 
-- Para entender melhor como funciona clicando [aqui]()
+- Para entender melhor como funciona clicando [aqui](https://youtu.be/NKbQmheig10)
 
 ## Licença
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
