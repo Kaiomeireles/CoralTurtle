@@ -101,9 +101,9 @@ const CoralGuard = () => {
 
 
       <section className="video">
-        <h2>Vídeo Educativo</h2>
+        <h2>Vídeo Explicativo</h2>
         <video controls>
-          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          <source src="" type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </video>
       </section>

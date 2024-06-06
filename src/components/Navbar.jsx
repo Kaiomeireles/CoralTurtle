@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="logo">
         <a href="/Home">
-          <img src="" alt="Logo" />
+          <img src="Coralturtle-removebg-preview.png" alt="Logo" />
         </a>
       </div>
       <ul className="nav-links">

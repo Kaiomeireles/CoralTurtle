@@ -4,6 +4,10 @@ body {
   font-family: Arial, sans-serif;
   background-color: #010b2b;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   padding: 0;
 }
 
@@ -21,6 +25,12 @@ footer {
 nav {
   background: rgb(255, 255, 255);
   padding: 10px 0;
+  .logo {
+    img {
+      width: 120px; /* Ajuste o tamanho conforme necessário */
+      height: auto; /* Mantém a proporção da imagem */
+    }
+  }
 
   ul {
     list-style-type: none;
@@ -400,8 +410,16 @@ h1 {
 .video {
   display: flex;
   justify-content: center;
-
+  max-width: 100%; /* Define uma largura máxima */
+  margin-bottom: 20px; /* Adiciona margem inferior para espaçamento */
 }
+
+.video video {
+  width: 100%; /* Faz o vídeo ocupar 100% da largura do contêiner */
+  height: auto; /* Mantém a proporção da altura */
+  max-width: 800px; /* Define um tamanho máximo para o vídeo */
+}
+
 
 .feedback form {
   display: flex;
@@ -459,3 +477,41 @@ h1 {
 // main.scss
 
 
+// Define estilos para dispositivos com largura até 600px
+@media only screen and (max-width: 600px) {
+  .homepage {
+    font-size: 16px; // Reduzindo o tamanho da fonte para telas menores
+  }
+
+  .carousel {
+    height: 400px; // Reduzindo a altura do carousel para telas menores
+  }
+
+  .dashboard-card {
+    flex-direction: column; // Mudando a direção dos cards em telas menores
+    text-align: center;
+    padding: 15px;
+  }
+
+  .dashboard-image {
+    width: 50%; // Reduzindo o tamanho da imagem do card para telas menores
+  }
+}
+
+// Define estilos para dispositivos com largura entre 601px e 900px
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .dashboard-card {
+    flex-direction: column; // Mudando a direção dos cards em telas médias
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+// Define estilos para dispositivos com largura acima de 1200px
+@media only screen and (min-width: 1201px) {
+  .dashboard-card {
+    margin: 20px; // Aumentando a margem entre os cards em telas maiores
+  }
+}
+
+// Outras media queries podem ser adicionadas conforme necessário para diferentes elementos e tamanhos de tela
